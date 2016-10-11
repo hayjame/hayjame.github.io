@@ -8,14 +8,21 @@
 
     <title>My IT Website!</title>
 <script>var counter = 0;
-function Burrito() {
- counter++;
+	var upgrade = 1;
+function Taco() {
+ counter = counter + upgrade;
  document.getElementById("counter1").innerHTML = counter;
-}</script>
+}
+function Upgrading(){
+upgrade = upgrade * 2;
+document.getElementById("upgrade1").innerHTML = upgrade;
+}	
+	</script>
 	</head>
 <body>
 	<h1>Welcome to Taco Tapper</h1>
-    <button onclick="Burrito()">Press this button</button>
+    <button onclick="Taco()">Press this button to tap the taco!</button>
+	 <button onclick="Upgrading()">Press this button to upgrade</button>
 	<div id="counter1"></div><p>0</p>
 </body>
 </html>
