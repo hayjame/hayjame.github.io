@@ -5,16 +5,26 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+<script>
 
-    <title>My IT Website!</title>
+    
+var counter = 0;
+function Cool() {
+ counter++;
+ document.getElementById("counter1").innerHTML = counter;
+}
+</script>
+    <title>Taco Tapper</title>
 </head>
 <body>
-<h1>Welcome to my Website!!!</h1>
-<p>(There will be a game here soon!!!!)</p>
-    <button>Press this button</button>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script>
-    
-    </script>
+<h1>Welcome to Taco Tapper!!!</h1>
+
+    <button onclick="Cool()">Press this button to gain tacos</button>
+   <div id="counter1">
+        </div>
+    <div align = "left">
+   Tacos   
+    </div>
+       
 </body>
 </html>
