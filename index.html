@@ -10,32 +10,21 @@
 	</head>
 <body>
 	<h1>Welcome to Taco Tapper</h1>
-   <input type="image" id="taco" src="IMG_1862.PNG" onClick="gainTacos()"/>
-    <input id="upgradeButton" type="submit" name="Buy clicker" onclick="Upgrade();" value="Buy Clicker"/>
-               <p id = "cost"></p>
-        <p id="amount">0 Pizza's</p>
-        <p id="p/s"></p>
+
+
     <script>       
-    var amount = 0;
-            var UpgradeFTW = 0;
-            var cost1 = 10;
-            function gainTacos(){
-                amount ++;
-                document.getElementById("amount").innerHTML= amount + " Pizzas";
-            };
-              function Upgrade(){
-                if(amount >= 10){
-                    UpgradeFTW ++;
-                    amount -= 10;
-                    cost1 +=5;
-                    document.getElementById("p/s").innerHTML= oldGrannies * 1 + " tacos per second"
-                    document.getElementById("amount").innerHTML = amount + " tacos"; 
-                    var persecond = oldGrannies;
-                    var cost = cost1;
-                }
-                else{
-                    alert("not enough tacos")
-                }
+    var counter = 0;
+    function gainTacos{
+        counter++;
+        document.getElementById("counter1").innerHTML = counter;
+    }
     </script>
+     <div id="counter1">     
+     
+  </div>
+    <div align = "left">
+    Tacos    
+    </div>
+       <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()"/>
         </body>
 </html>

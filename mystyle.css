@@ -5,5 +5,5 @@ h1 {
     color:#33cc00
 }
 html {
-    background-color:#BAABFF;
+    background: -webkit-linear-gradient(left, rgba(148, 15, 178,1), rgba(0,255,255,1));
 }
