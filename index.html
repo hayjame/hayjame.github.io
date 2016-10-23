@@ -25,7 +25,8 @@
 	if(counter >= 10) {
 		perSecondCounter++;
 		document.getElementById("p/s").innerHTML= perSecondCounter + " tacos per second"
-                document.getElementById("counter").innerHTML = counter + " tacos"; 
+                document.getElementById("counter").innerHTML = counter + " tacos";
+		counter-=10;
 	}
 	else{
 	alert("Not enough tacos!");	
