@@ -14,9 +14,19 @@
    <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()">
     <script>       
     var counter = 0;
+    var perSecondCounter = 0;
+    var perSecondCost = 0;
     function gainTacos(){
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Tacos";
+    }
+    function perSecond(){
+	if(counter >= 10) {
+		perSecondCounter++;
+		document.getElementById("p/s").innerHTML= perSecondCounter + " pizzas per second"
+                document.getElementById("counter").innerHTML = counter + " pizzas"; 
+	}
+		
     }
     </script>
      <div id="counter1">     
