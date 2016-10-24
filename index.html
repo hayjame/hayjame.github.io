@@ -17,7 +17,7 @@
     <script>       
     var counter = 0;
     var perSecondCounter = 0;
-    var perSecondCost = 0;
+    var perSecondCost = 10;
     function gainTacos(){
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Tacos"; 
@@ -25,7 +25,7 @@
     function perSecond(){
 	if(counter >= 10) {
 		perSecondCounter++;
-		counter = counter - 10;
+		counter = counter - perSecondCost;
 		document.getElementById("p/s").innerHTML= perSecondCounter + " tacos per second"
                 document.getElementById("counter1").innerHTML = counter + " Tacos";
 	}
@@ -33,7 +33,11 @@
 	alert("Not enough tacos!");	
 	}
     }
-               
+    setInterval(second,1000);
+            function second (){
+                  counter += perSecondCounter;
+                  document.getElementById("counter1").innerHTML = counter + " tacos";
+	    }           
     </script>
      <div id="counter1">     
      0 Tacos
