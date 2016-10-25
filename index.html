@@ -11,7 +11,7 @@
 <body>
 	<h1>Welcome to Taco Tapper</h1>
 <h3>Where you can satisfy all of your taco tapping needs!</h3>
-	<p id="clickerCost">1 Clicker costs 10 Tacos</p>
+	<p id="clickerCost"></p>
    <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()">
 	<button id="perSecondButton" onClick="perSecond()">Buy Clicker</button>
     <script>       
@@ -29,7 +29,7 @@
 		perSecondCost *= 2;
 		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second"
                 document.getElementById("counter1").innerHTML = counter + " Tacos";
-		document.getElementById("counter1").innerHTML = "1 Clicker costs" + TacosperSecondCost + " Tacos";
+		document.getElementById("clickerCost").innerHTML = "1 Clicker costs" + TacosperSecondCost + " Tacos";
 	}
 	else{
 	alert("Not enough tacos!");	
