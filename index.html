@@ -23,7 +23,7 @@
         document.getElementById("counter1").innerHTML = counter + " Tacos"; 
     }
     function perSecond(){
-	if(counter >= 10) {
+	if(counter >= perSecondCost) {
 		perSecondCounter++;
 		perSecondCost *= 2
 		counter = counter - perSecondCost;
