@@ -27,9 +27,9 @@
 		perSecondCounter++;
 		counter = counter - perSecondCost;
 		perSecondCost *= 2;
-		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second"
+		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
                 document.getElementById("counter1").innerHTML = counter + " Tacos";
-		document.getElementById("clickerCost").innerHTML = "1 Clicker costs" + TacosperSecondCost + " Tacos";
+		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
 	}
 	else{
 	alert("Not enough tacos!");	
