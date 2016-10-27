@@ -24,7 +24,7 @@
     function perSecond(){
 	if(counter >= perSecondCost) {
 		perSecondCounter++;
-		counter = counter - perSecondCost;
+		counter -= perSecondCost;
 		perSecondCost += 1;
 		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
                 document.getElementById("counter1").innerHTML = counter + " Tacos";
