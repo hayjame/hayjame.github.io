@@ -15,6 +15,7 @@ div {
 p {
     color:rgb(255,255,255);
 }
+<<<<<<< HEAD
 @media (max-width: 439px) {
     #taco {
         width:350px;
@@ -22,3 +23,10 @@ p {
 }
 
 
+=======
+@media (max-width: 400px){
+    #taco {
+    width:100%;
+    }
+}
+>>>>>>> origin/master
