@@ -14,11 +14,13 @@
 <h3>Where you can satisfy all of your taco tapping needs!</h3>
    <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()">
 	<button id="perSecondButton" onClick="perSecond()">Buy Clicker</button>
-        <button id="perSecondPerSecondButton" onClick="perSecondPerSecond">Buy Spicy Sauce</button>
+        <button id="perSecondPerSecondButton" onClick="perSecondPerSecond()">Buy Spicy Sauce</button>
     <script>       
     var counter = 0;
     var perSecondCounter = 0;
     var perSecondCost = 10;
+    var perSecondPerSecondCounter = 0;
+    var perSecondPerSecondCounter = 100;
     function gainTacos(){
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Tacos"; 
@@ -35,12 +37,25 @@
 	else{
 	alert("Not enough tacos!");	
 	}
+	    function perSecondPerSecond(){
+	if(counter >= perSecondPerSecondCost) {
+		perSecondPerSecondCounter++;
+		counter -= perSecondPerSecondCost;
+	}
+	else{
+	alert("Not enough tacos!");	
+	}
     }
     setInterval(second,1000);
             function second (){
                   counter += perSecondCounter;
                   document.getElementById("counter1").innerHTML = counter + " Tacos";
-	    }           
+	    }
+    setInterval(tenSecond,1000);
+            function tenSecond (){
+                  perSecondCounter += perSecondPerSecondCounter;
+                  document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
+	    }
     </script>
      <div id="counter1">     
      0 Tacos
