@@ -9,22 +9,28 @@
     <title>Taco Tapper</title>
 	</head>
 <body>
-<audio loop autoplay><source src="bensound-dubstep.mp3" type="audio/mpeg"></audio>
+<audio controls loop autoplay><source src="bensound-dubstep.mp3" type="audio/mpeg"></audio>
 	<h1>Welcome to Taco Tapper</h1>
 <h3>Where you can satisfy all of your taco tapping needs!</h3>
    <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()">
 	<button id="perSecondButton" onClick="perSecond()">Buy Clicker</button>
         <button id="perSecondPerSecondButton" onClick="perSecondPerSecond()">Buy Spicy Sauce</button>
-    <script>       
+    <script>
+    
+    //Variable declorations
     var counter = 0;
     var perSecondCounter = 0;
     var perSecondCost = 10;
     var perSecondPerSecondCounter = 0;
     var perSecondPerSecondCounter = 100;
+    
+    //Add tacos on click
     function gainTacos(){
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Tacos"; 
     }
+
+    //Gain tacos per second
     function perSecond(){
 	if(counter >= perSecondCost) {
 		perSecondCounter++;
@@ -37,6 +43,14 @@
 	else{
 	alert("Not enough tacos!");	
 	}
+    }
+	    setInterval(second,1000);
+            function second (){
+                  counter += perSecondCounter;
+                  document.getElementById("counter1").innerHTML = counter + " Tacos";
+	    }
+
+     //Add spicy sauce
 	    function perSecondPerSecond(){
 	if(counter >= perSecondPerSecondCost) {
 		perSecondPerSecondCounter++;
@@ -46,11 +60,7 @@
 	alert("Not enough tacos!");	
 	}
     }
-    setInterval(second,1000);
-            function second (){
-                  counter += perSecondCounter;
-                  document.getElementById("counter1").innerHTML = counter + " Tacos";
-	    }
+
     setInterval(tenSecond,1000);
             function tenSecond (){
                   perSecondCounter += perSecondPerSecondCounter;
