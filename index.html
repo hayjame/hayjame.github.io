@@ -22,13 +22,13 @@
     var perSecondCounter = 0;
     var perSecondCost = 10;
     var perSecondPerSecondCounter = 0;
-    var perSecondPerSecondCounter = 100;
+    var perSecondPerSecondCost = 100;
     
     //Add tacos on click
     function gainTacos(){
         counter++;
         document.getElementById("counter1").innerHTML = counter + " Tacos"; 
-    }
+    };
 
     //Gain tacos per second
     function perSecond(){
@@ -39,33 +39,34 @@
 		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
                 document.getElementById("counter1").innerHTML = counter + " Tacos";
 		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
-	}
+	};
 	else{
 	alert("Not enough tacos!");	
-	}
-    }
-	    setInterval(second,1000);
-            function second (){
+	};
+    };
+	    setInterval(function second (){
                   counter += perSecondCounter;
                   document.getElementById("counter1").innerHTML = counter + " Tacos";
-	    }
+	    },1000);
+            
+                  
 
      //Add spicy sauce
 	    function perSecondPerSecond(){
 	if(counter >= perSecondPerSecondCost) {
 		perSecondPerSecondCounter++;
 		counter -= perSecondPerSecondCost;
-	}
+	};
 	else{
 	alert("Not enough tacos!");	
-	}
-    }
+	};
+    };
 
-    setInterval(tenSecond,1000);
-            function tenSecond (){
+    setInterval(function tenSecond(){
                   perSecondCounter += perSecondPerSecondCounter;
                   document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
-	    }
+	    },1000);
+            
     </script>
      <div id="counter1">     
      0 Tacos
