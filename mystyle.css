@@ -15,7 +15,7 @@ div {
 p {
     color:rgb(255,255,255);
 }
-@media (max-width: 400px){
+@media (max-width: 502px){
     #taco {
     width:100%;
     }

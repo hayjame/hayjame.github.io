@@ -5,6 +5,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
     
     <title>Taco Tapper</title>
 	</head>
@@ -14,34 +15,9 @@
 <h3>Where you can satisfy all of your taco tapping needs!</h3>
    <input type="image" id="taco" src="Taco.PNG" onClick="gainTacos()">
 	<button id="perSecondButton" onClick="perSecond()">Buy Clicker</button>
-        <button id="perSecondPerSecondButton" onClick="perSecondPerSecond">Buy Spicy Sauce</button>
-    <script>       
-    var counter = 0;
-    var perSecondCounter = 0;
-    var perSecondCost = 10;
-    function gainTacos(){
-        counter++;
-        document.getElementById("counter1").innerHTML = counter + " Tacos"; 
-    }
-    function perSecond(){
-	if(counter >= perSecondCost) {
-		perSecondCounter++;
-		counter -= perSecondCost;
-		perSecondCost += 1;
-		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
-        document.getElementById("counter1").innerHTML = counter + " Tacos";
-		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
-	}
-	else{
-	alert("Not enough tacos!");	
-	}
-    }
-    setInterval(second,1000);
-            function second (){
-                  counter += perSecondCounter;
-                  document.getElementById("counter1").innerHTML = counter + " Tacos";
-	    }           
-    </script>
+        <button id="perSecondPerSecondButton" onClick="perSecondPerSecond()">Buy Spicy Sauce</button>
+      
+<script src="game.js"></script>
      <div id="counter1">     
      0 Tacos
   </div>
