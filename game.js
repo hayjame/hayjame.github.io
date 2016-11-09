@@ -35,3 +35,7 @@ function perSecondPerSecond() {
        alert("Not enough Tacos!!")
    }
 }
+  setInterval(tenSecond,1000);
+            function tenSecond (){
+                  perSecondCounter += perSecondPerSecondCounterCounter;
+                  document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
