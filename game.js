@@ -23,6 +23,7 @@ document.getElementById("counter1").innerHTML = counter + " Tacos";
   function perSecondPerSecond() {
    if(counter >= perSecondPerSecondCost){
        counter -= perSecondPerSecondCost;
+       perSecondPerSecondCost += 10;
        perSecondPerSecondCounter++;
        document.getElementById("counter1").innerHTML = counter + " Tacos";
        document.getElementById("clickersPerSecond").innerHTML= perSecondPerSecondCounter + " clickers per 5 seconds";
