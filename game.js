@@ -26,7 +26,7 @@ document.getElementById("counter1").innerHTML = counter + " Tacos";
        perSecondPerSecondCost += 10;
        perSecondPerSecondCounter++;
        document.getElementById("counter1").innerHTML = counter + " Tacos";
-       document.getElementById("clickersPerSecond").innerHTML= perSecondPerSecondCounter + " clickers per 5 seconds";
+       document.getElementById("clickersPerSecond").innerHTML= perSecondPerSecondCounter + " clicker(s) per 5 seconds";
        document.getElementById("clickersPerSecondCost").innerHTML= perSecondPerSecondCounter + "1 clicker costs " + perSecondPerSecondCost + " Tacos";
    }
     else {
