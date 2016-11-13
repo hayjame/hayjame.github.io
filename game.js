@@ -41,5 +41,4 @@ document.getElementById("counter1").innerHTML = counter + " Tacos";
 function fiveSecond(){
                       perSecondCounter += perSecondPerSecondCounter;
                       document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
-                  }
 setInterval(fiveSecond, 5000);
