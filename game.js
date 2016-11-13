@@ -4,15 +4,15 @@ var perSecondCost = 10;
 var perSecondPerSecondCounter = 0;
 var perSecondPerSecondCost = 100;
 function gainTacos() {
-counter = counter + 1;
-document.getElementById("counter1").innerHTML = counter + " Tacos"; 
+    counter++;
+    document.getElementById("counter1").innerHTML = counter + " Tacos"; 
 }
     function perSecond(){
 	if(counter >= perSecondCost) {
 		perSecondCounter++;
 		counter -= perSecondCost;
 		perSecondCost += 1;
-		document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
+		document.getElementById("p/s").innerHTML = perSecondCounter + " Tacos per second";
         document.getElementById("counter1").innerHTML = counter + " Tacos";
 		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
 	}
@@ -37,8 +37,9 @@ document.getElementById("counter1").innerHTML = counter + " Tacos";
                   counter += perSecondCounter;
                   document.getElementById("counter1").innerHTML = counter + " Tacos";
 }
-  setInterval(second, 1000);
-function fiveSecond(){
-                      perSecondCounter += perSecondPerSecondCounter;
-                      document.getElementById("p/s").innerHTML= perSecondCounter + " Tacos per second";
+setInterval(second, 1000);
+function fiveSecond() {
+    perSecondCounter += perSecondPerSecondCounter;
+    document.getElementById("p/s").innerHTML = perSecondCounter + " Tacos per second";
+}
 setInterval(fiveSecond, 5000);
