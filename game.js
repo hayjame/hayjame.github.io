@@ -17,7 +17,7 @@ function gainTacos() {
 		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
 	}
 	else{
-	alert("Need 10 tacos!");	
+	alert("Need " + perSecondCost +" tacos!");	
 	}
     }
   function perSecondPerSecond() {
@@ -30,7 +30,7 @@ function gainTacos() {
        document.getElementById("clickersPerSecondCost").innerHTML= "1 spicy sauce costs " + perSecondPerSecondCost + " Tacos";
    }
     else {
-       alert("Need 100 tacos");
+       alert("Need " + perSecondPerSecondCostCost +" tacos!");
    }
 }
             function second (){
