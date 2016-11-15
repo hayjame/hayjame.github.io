@@ -30,7 +30,7 @@ function gainTacos() {
        document.getElementById("clickersPerSecondCost").innerHTML= "1 spicy sauce costs " + perSecondPerSecondCost + " Tacos";
    }
     else {
-       alert("Need " + perSecondPerSecondCostCost +" tacos!");
+       alert("Need " + perSecondPerSecondCost +" tacos!");
    }
 }
             function second (){
