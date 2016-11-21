@@ -7,8 +7,8 @@ function gainTacos() {
     counter++;
     document.getElementById("counter1").innerHTML = counter + " Tacos"; 
 }
-    function perSecond(){
-	if(counter >= perSecondCost) {
+function perSecond() {
+	if (counter >= perSecondCost) {
 		perSecondCounter++;
 		counter -= perSecondCost;
 		perSecondCost += 1;
@@ -17,7 +17,7 @@ function gainTacos() {
 		document.getElementById("clickerCost").innerHTML = "1 clicker costs " + perSecondCost + " Tacos";
 	}
 	else{
-	alert("Need " + perSecondCost +" tacos!");	
+	alert("Need " + perSecondCost + " tacos!");	
 	}
     }
   function perSecondPerSecond() {
@@ -26,11 +26,11 @@ function gainTacos() {
        perSecondPerSecondCost += 10;
        perSecondPerSecondCounter++;
        document.getElementById("counter1").innerHTML = counter + " Tacos";
-       document.getElementById("clickersPerSecond").innerHTML= perSecondPerSecondCounter + " clicker(s) per 5 seconds";
-       document.getElementById("clickersPerSecondCost").innerHTML= "1 spicy sauce costs " + perSecondPerSecondCost + " Tacos";
-   }
+       document.getElementById("clickersPerSecond").innerHTML = perSecondPerSecondCounter + " clicker(s) per 5 seconds";
+       document.getElementById("clickersPerSecondCost").innerHTML = "1 spicy sauce costs " + perSecondPerSecondCost + " Tacos";
+     }
     else {
-       alert("Need " + perSecondPerSecondCost +" tacos!");
+       alert("Need " + perSecondPerSecondCost + " tacos!");
    }
 }
             function second (){

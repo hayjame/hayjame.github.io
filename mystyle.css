@@ -10,17 +10,16 @@ html {
     background: -webkit-linear-gradient(left, rgba(148, 15, 178,1), rgba(0,255,255,1));
 }
 div {
-    color:rgb(255,255,255);
+    color:white;
 }
 p {
-    color:rgb(255,255,255);
+    color:white;
 }
 @media (max-width: 502px){
     #taco {
     width:100%;
     }
 }
-
 @media (max-width: 439px) and (min-width: 354px){
     h3 {
     font-size: 15px;
