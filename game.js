@@ -1,4 +1,4 @@
-var counter = 0;
+var counter = 9999999;
 var perSecondCounter = 0;
 var perSecondCost = 10;
 var perSecondPerSecondCounter = 0;
