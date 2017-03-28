@@ -1,4 +1,4 @@
-var counter = localStorage.getItem("counter1");
+var counter = 0;
 var perSecondCounter = 0;
 var perSecondCost = 10;
 var perSecondPerSecondCounter = 0;
@@ -6,7 +6,6 @@ var perSecondPerSecondCost = 100;
 function gainTacos() {
     counter++;
     document.getElementById("counter1").innerHTML = counter + " Tacos"; 
-    localStorage.setItem("counter1", counter);
 }
 function perSecond() {
 	if (counter >= perSecondCost) {
